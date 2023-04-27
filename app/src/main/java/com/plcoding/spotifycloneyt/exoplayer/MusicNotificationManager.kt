@@ -18,7 +18,7 @@ import com.plcoding.spotifycloneyt.other.Constants.NOTIFICATION_ID
 class MusicNotificationManager(
     private val context: Context,
     sessionToken: MediaSessionCompat.Token,
-    notificationListener: PlayerNotificationManager.NotificationListener
+    notificationListener: PlayerNotificationManager.NotificationListener,
     private val newSongCallback: () -> Unit
 ) {
 
