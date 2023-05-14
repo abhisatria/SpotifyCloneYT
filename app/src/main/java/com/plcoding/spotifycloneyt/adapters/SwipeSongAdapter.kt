@@ -3,10 +3,8 @@ package com.plcoding.spotifycloneyt.adapters
 import androidx.recyclerview.widget.AsyncListDiffer
 import com.plcoding.spotifycloneyt.R
 import kotlinx.android.synthetic.main.list_item.view.*
-import javax.inject.Inject
 
-class SwipeSongAdapter @Inject constructor(
-) : BaseSongAdapter(R.layout.list_item) {
+class SwipeSongAdapter : BaseSongAdapter(R.layout.swipe_item) {
 
     override val differ = AsyncListDiffer(this, diffCallback)
 
